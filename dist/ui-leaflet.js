@@ -4049,7 +4049,7 @@ angular.module("ui-leaflet").directive('legend', ["leafletLogger", "$http", "$ti
                 leafletScope.$watch('legend', function (newLegend) {
                     if (!isDefined(newLegend)) {
                         if (isDefined(leafletLegend)) {
-                            leafletLegend.removeFrom(map);
+                            leafletLegend.remove(map);
                             leafletLegend = null;
                         }
 
@@ -4067,7 +4067,7 @@ angular.module("ui-leaflet").directive('legend', ["leafletLogger", "$http", "$ti
                     }
 
                     if (isDefined(leafletLegend)) {
-                        leafletLegend.removeFrom(map);
+                        leafletLegend.remove(map);
                         leafletLegend = null;
                     }
 
